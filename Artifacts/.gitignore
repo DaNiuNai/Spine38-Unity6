@@ -1,0 +1,6 @@
+# Generated binaries and intermediate player assemblies; retain validation reports.
+SpineCompatibility/Builds/
+SpineCompatibility/PlayerScripts/
+SpineCompatibility/Packages/
+# Keep concise validation summaries instead of machine-specific full build logs.
+SpineCompatibility/build-*.json

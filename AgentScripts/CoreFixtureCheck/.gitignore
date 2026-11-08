@@ -1,0 +1,5 @@
+bin/
+obj/
+# These are maintained test projects, unlike Unity-generated IDE project files.
+!CoreFixtureCheck.csproj
+!Runtime/CoreFixtureRuntime.csproj

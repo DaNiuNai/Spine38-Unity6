@@ -1,0 +1,23 @@
+{
+    "jsonVersion": "3.8.75",
+    "binaryVersion": "3.8.75",
+    "bones": 31,
+    "slots": 21,
+    "skins": 1,
+    "animations": 8,
+    "comparedFrames": 960,
+    "maxBoneDifference": 0.006870970129966736,
+    "maxVertexDifference": 0.006901857443153858,
+    "passedAnimations": [
+        "attack",
+        "crouch",
+        "fall",
+        "head-turn",
+        "idle",
+        "jump",
+        "run",
+        "walk"
+    ],
+    "errors": [],
+    "success": true
+}

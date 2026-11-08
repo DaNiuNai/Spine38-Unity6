@@ -1,0 +1,271 @@
+{
+    "pipeline": "URP",
+    "unityVersion": "6000.3.27f2",
+    "complete": true,
+    "scenes": [
+        {
+            "scene": "Assets/Spine Examples/Getting Started/1 The Spine GameObject.unity",
+            "frames": 402,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Getting Started/2 Controlling Animation.unity",
+            "frames": 519,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Getting Started/3 Controlling Animation Continued.unity",
+            "frames": 507,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Getting Started/4 Object Oriented Sample.unity",
+            "frames": 523,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Getting Started/5 Basic Platformer.unity",
+            "frames": 424,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 31,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Getting Started/6 SkeletonGraphic.unity",
+            "frames": 499,
+            "skeletons": 0,
+            "graphics": 2,
+            "renderedMeshes": 0,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Animation Tester/Animation Tester.unity",
+            "frames": 490,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/AtlasRegionAttacher.unity",
+            "frames": 543,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/BlendModes.unity",
+            "frames": 499,
+            "skeletons": 2,
+            "graphics": 0,
+            "renderedMeshes": 3,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Drunkboy.unity",
+            "frames": 510,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/FixedTimestepUpdates.unity",
+            "frames": 532,
+            "skeletons": 3,
+            "graphics": 0,
+            "renderedMeshes": 3,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Freezeboy.unity",
+            "frames": 561,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Goblins.unity",
+            "frames": 531,
+            "skeletons": 2,
+            "graphics": 0,
+            "renderedMeshes": 2,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Instantiate from Script.unity",
+            "frames": 570,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Mix and Match Equip.unity",
+            "frames": 490,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Mix and Match Skins.unity",
+            "frames": 427,
+            "skeletons": 1,
+            "graphics": 5,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Mix and Match.unity",
+            "frames": 481,
+            "skeletons": 2,
+            "graphics": 1,
+            "renderedMeshes": 2,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Outline Shaders.unity",
+            "frames": 414,
+            "skeletons": 3,
+            "graphics": 1,
+            "renderedMeshes": 3,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Per Instance Material Properties.unity",
+            "frames": 498,
+            "skeletons": 4,
+            "graphics": 0,
+            "renderedMeshes": 4,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonAnimationMulti.unity",
+            "frames": 556,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonRenderSeparator.unity",
+            "frames": 470,
+            "skeletons": 2,
+            "graphics": 1,
+            "renderedMeshes": 5,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonUtility Animated Physics.unity",
+            "frames": 523,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonUtility Eyes.unity",
+            "frames": 533,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 2,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonUtility GroundConstraint.unity",
+            "frames": 498,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 2,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonUtility Platformer HingeChain Physics.unity",
+            "frames": 428,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 31,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SkeletonUtility Ragdoll.unity",
+            "frames": 524,
+            "skeletons": 3,
+            "graphics": 0,
+            "renderedMeshes": 12,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SpineGauge.unity",
+            "frames": 529,
+            "skeletons": 3,
+            "graphics": 0,
+            "renderedMeshes": 3,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/Sprite Shaders.unity",
+            "frames": 441,
+            "skeletons": 2,
+            "graphics": 0,
+            "renderedMeshes": 3,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/SpriteMask and RectMask2D.unity",
+            "frames": 438,
+            "skeletons": 2,
+            "graphics": 3,
+            "renderedMeshes": 2,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/StateMachine SkeletonAnimation/Mecanim Logic SkeletonAnimation View.unity",
+            "frames": 513,
+            "skeletons": 1,
+            "graphics": 0,
+            "renderedMeshes": 1,
+            "errors": []
+        },
+        {
+            "scene": "Assets/Spine Examples/Other Examples/VertexEffect.unity",
+            "frames": 485,
+            "skeletons": 2,
+            "graphics": 0,
+            "renderedMeshes": 2,
+            "errors": []
+        },
+        {
+            "scene": "Packages/com.esotericsoftware.spine.urp-shaders/Examples/3D/URP 3D Shaders.unity",
+            "frames": 251,
+            "skeletons": 3,
+            "graphics": 0,
+            "renderedMeshes": 4,
+            "errors": []
+        },
+        {
+            "scene": "Packages/com.esotericsoftware.spine.urp-shaders/Examples/Outline Shaders URP.unity",
+            "frames": 378,
+            "skeletons": 2,
+            "graphics": 1,
+            "renderedMeshes": 3,
+            "errors": []
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "passed": [
+        "Pointer release launches the 2D ragdoll and physics advances",
+        "Pointer click switches Goblins skin",
+        "Pointer drag moves the bone target"
+    ],
+    "failed": []
+}

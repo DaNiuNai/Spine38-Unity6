@@ -1,0 +1,12 @@
+{
+    "target": "iOS",
+    "unityVersion": "6000.3.27f2",
+    "success": true,
+    "spineAssemblies": [
+        "spine-timeline.dll",
+        "spine-unity-examples-input-system.dll",
+        "spine-unity-examples.dll",
+        "spine-unity.dll"
+    ],
+    "errors": []
+}

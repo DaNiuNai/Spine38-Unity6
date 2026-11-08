@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "jsonVersion": "3.8.75",
+  "binaryVersion": "3.8.75",
+  "bones": 31,
+  "slots": 21,
+  "skins": 1,
+  "animations": [
+    "attack",
+    "crouch",
+    "fall",
+    "head-turn",
+    "idle",
+    "jump",
+    "run",
+    "walk"
+  ],
+  "comparedFrames": 960,
+  "maxBoneDifference": 0.006870791024515275,
+  "maxVertexDifference": 0.006899893283843994,
+  "errors": [],
+  "scope": "Pure C# runtime, original 3.8.75 JSON and binary exports. See real-3.8.75.json for the separate Unity mesh comparison."
+}

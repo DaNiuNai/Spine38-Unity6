@@ -1,0 +1,17 @@
+[
+  {
+    "name": "com.esotericsoftware.spine.timeline-3.8.4.tgz",
+    "bytes": 170829,
+    "sha256": "58084FED43468755FD93F1F202C539BE6736D4B4D4868A1BC6E14C74191635C4"
+  },
+  {
+    "name": "com.esotericsoftware.spine.urp-shaders-3.8.2.tgz",
+    "bytes": 1785535,
+    "sha256": "FD4307C9E0811DAD27AE69265B5FF0A5236EA69990E2FF6F208F2BA85C3ED7EA"
+  },
+  {
+    "name": "spine-unity-3.8-unity6000.3.unitypackage",
+    "bytes": 8987939,
+    "sha256": "454D5A45D57496381494CCCA327298CC1972927384EBE8FDDD32C4B3A88F3791"
+  }
+]

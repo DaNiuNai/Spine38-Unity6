@@ -1,0 +1,26 @@
+{
+  "Android": {
+    "result": "passed",
+    "feedback": "两个角色都正常",
+    "source": "用户手动运行反馈",
+    "device": "未指定",
+    "recordedAt": "2026-11-08T21:04:08.0461099+08:00"
+  },
+  "iOS": {
+    "result": "Xcode工程导出通过",
+    "deviceRun": "尚未在Mac/Xcode及iOS设备验证"
+  },
+  "WebGL": {
+    "result": "passed",
+    "feedback": "两个角色都正常",
+    "source": "用户在本机浏览器手动运行反馈",
+    "url": "http://127.0.0.1:50381/",
+    "recordedAt": "2026-11-08T21:12:16.0385589+08:00"
+  },
+  "WindowsBuiltin": {
+    "result": "passed",
+    "feedback": "两个角色都正常",
+    "source": "用户手动运行Windows可执行文件反馈",
+    "recordedAt": "2026-11-08T21:19:12.6283297+08:00"
+  }
+}

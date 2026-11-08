@@ -1,0 +1,107 @@
+{
+  "unity": "6000.3.27f2",
+  "sourcePackage": "spine-unity-3.8-2021-11-10.unitypackage",
+  "builds": [
+    {
+      "name": "WindowsBuiltin",
+      "platform": "StandaloneWindows64",
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 0,
+      "durationMs": 16045,
+      "warningDetails": []
+    },
+    {
+      "name": "WindowsURP",
+      "platform": "StandaloneWindows64",
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 10,
+      "durationMs": 50668,
+      "warningDetails": [
+        "Problematic material setup at Character (mix-and-match-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (1): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (2): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Left VisibleOutsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Right VisibleInsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at raptor: \nWarning: Z Spacing recommended on selected shader configuration!\nPlease",
+        "Problematic material setup at Spine GameObject (spineboy-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Spine GameObject (whirlyblendmodes): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Shader warning in 'Hidden/Core/DebugOccluder': implicit truncation of vector type at Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/GPUDriven/DebugOccluder.shader(36) (on d3d11)\nCompiling Subshader: 0, Pass: DebugOccluder, Fragment program with <no keywords>\nPlatform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS"
+      ]
+    },
+    {
+      "name": "AndroidURP",
+      "platform": "Android",
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 10,
+      "durationMs": 71135,
+      "warningDetails": [
+        "Game scripts or other custom code contains OnMouse_ event handlers. Presence of such handlers might impact performance on handheld devices.",
+        "Problematic material setup at Character (mix-and-match-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (1): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (2): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Left VisibleOutsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Right VisibleInsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at raptor: \nWarning: Z Spacing recommended on selected shader configuration!\nPlease",
+        "Problematic material setup at Spine GameObject (spineboy-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Spine GameObject (whirlyblendmodes): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease"
+      ]
+    },
+    {
+      "name": "iOSURP",
+      "platform": "iOS",
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 10,
+      "durationMs": 75041,
+      "warningDetails": [
+        "Game scripts or other custom code contains OnMouse_ event handlers. Presence of such handlers might impact performance on handheld devices.",
+        "Problematic material setup at Character (mix-and-match-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (1): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (2): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Left VisibleOutsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Right VisibleInsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at raptor: \nWarning: Z Spacing recommended on selected shader configuration!\nPlease",
+        "Problematic material setup at Spine GameObject (spineboy-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Spine GameObject (whirlyblendmodes): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease"
+      ]
+    },
+    {
+      "name": "WebGLURP",
+      "platform": "WebGL",
+      "result": "Succeeded",
+      "errors": 0,
+      "warnings": 11,
+      "durationMs": 336720,
+      "warningDetails": [
+        "[TestRunBuilder] Content changed for 'Assets/Resources/PerformanceTestRunInfo.json' - rewriting file\nOld length: 3059 bytes\nNew length: 3059 bytes",
+        "Problematic material setup at Character (mix-and-match-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (1): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy (2): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raggedy Spineboy: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Left VisibleOutsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Raptor Right VisibleInsideMask: \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at raptor: \nWarning: Z Spacing recommended on selected shader configuration!\nPlease",
+        "Problematic material setup at Spine GameObject (spineboy-pro): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Problematic material setup at Spine GameObject (whirlyblendmodes): \nWarning: Premultiply-alpha atlas textures not supported in Linear color space!\nPlease",
+        "Shader warning in 'Hidden/Core/DebugOccluder': implicit truncation of vector type at Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/GPUDriven/DebugOccluder.shader(36) (on d3d11)\nCompiling Subshader: 0, Pass: DebugOccluder, Vertex program with <no keywords>\nPlatform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS"
+      ]
+    }
+  ],
+  "manualValidation": "manual-validation.json",
+  "runtimeRegression": "audit.json",
+  "realFixtureComparison": "real-3.8.75.json",
+  "limitations": [
+    "iOS was exported as an Xcode project; compilation/signing/device execution on macOS remains unverified.",
+    "Original PMA samples produce material-workflow warnings in Linear builds; the Built-in/Gamma build has no warnings."
+  ],
+  "historicalAttempts": [
+    "Initial Android packaging was cancelled after stalled dependency downloads; the retry with domestic Maven mirrors succeeded.",
+    "Initial WebGL postprocessing failed because the newly installed module had not loaded; restarting Unity and rebuilding succeeded."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+    "passed": [
+        "3.8.75 JSON: animation, events, mixing and completion",
+        "3.8.75 binary: header and skeleton structure",
+        "Malformed binary remains rejected",
+        "Timeline 1.8: editor pose preview",
+        "2D physics: dynamic and kinematic bone bodies"
+    ],
+    "failed": [],
+    "limitation": "These synthetic format checks supplement the real exported-asset comparison in real-3.8.75.json."
+}

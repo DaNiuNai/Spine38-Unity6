@@ -1,0 +1,1 @@
+Keyboard axis, key mapping, button press/release edges and gamepad axis passed.

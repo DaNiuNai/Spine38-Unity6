@@ -1,0 +1,15 @@
+{
+    "pipeline": "URP-2D",
+    "unityVersion": "6000.3.27f2",
+    "complete": true,
+    "scenes": [
+        {
+            "scene": "Packages/com.esotericsoftware.spine.urp-shaders/Examples/2D/URP 2D Shaders.unity",
+            "frames": 382,
+            "skeletons": 3,
+            "graphics": 0,
+            "renderedMeshes": 3,
+            "errors": []
+        }
+    ]
+}
