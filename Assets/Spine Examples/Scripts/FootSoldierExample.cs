@@ -30,6 +30,7 @@
 // Contributed by: Mitch Thompson
 
 using UnityEngine;
+using Input = Spine.Unity.Examples.ExampleInput;
 using System.Collections;
 using Spine.Unity;
 

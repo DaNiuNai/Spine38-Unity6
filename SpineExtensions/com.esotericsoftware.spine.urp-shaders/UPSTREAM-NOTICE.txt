@@ -1,0 +1,20 @@
+Spine 3.8 / Unity 6000.3 compatibility adaptation
+
+Package metadata and original example assets:
+  Esoteric Software spine.urp-shaders 3.8.2, 2021-03-04.
+
+Shader source files (.shader, .hlsl, .cginc):
+  Ported from Esoteric Software spine.urp-shaders 4.2, 2025-12-09,
+  published for Unity 2019.3 through 6000.3. The 3.8 mesh vertex layout
+  (position, color, UV, optional dark-color UVs, normals and tangents) is retained.
+  This does not upgrade the Spine 3.8 animation or skeleton data runtime.
+  Source: https://esotericsoftware.com/files/runtimes/unity/com.esotericsoftware.spine.urp-shaders-4.2-Unity2019.3-2025-12-09.zip
+
+Local compatibility change:
+  Unity 6.1+ Forward+ variants use _CLUSTER_LIGHT_LOOP, the keyword enabled
+  by current URP renderers, instead of only the deprecated _FORWARD_PLUS.
+  The associated light-loop and subtractive-light macros are mapped as well,
+  so point/spot lights use the cluster fragment loop instead of the empty
+  legacy per-object light list.
+
+See UPSTREAM-SHADERS-LICENSE.txt for the license shipped with those sources.

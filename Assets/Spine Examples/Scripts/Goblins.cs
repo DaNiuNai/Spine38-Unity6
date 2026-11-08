@@ -32,7 +32,12 @@ using Spine;
 using Spine.Unity;
 
 namespace Spine.Unity.Examples {
-	public class Goblins : MonoBehaviour {
+	public class Goblins : MonoBehaviour, UnityEngine.EventSystems.IPointerDownHandler {
+		public void OnPointerDown (UnityEngine.EventSystems.PointerEventData eventData) {
+		#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+			if (eventData.button == UnityEngine.EventSystems.PointerEventData.InputButton.Left) OnMouseDown();
+		#endif
+		}
 		SkeletonAnimation skeletonAnimation;
 		Bone headBone;
 		bool girlSkin;

@@ -99,8 +99,8 @@ namespace Spine {
 				var skeletonMap = (Dictionary<string, Object>)root["skeleton"];
 				skeletonData.hash = (string)skeletonMap["hash"];
 				skeletonData.version = (string)skeletonMap["spine"];
-				if ("3.8.75" == skeletonData.version)
-					throw new Exception("Unsupported skeleton data, please export with a newer version of Spine.");
+				// Preserve the exported version, including 3.8.75. Validate the data
+				// through the 3.8 reader rather than rejecting one patch version by name.
 				skeletonData.x = GetFloat(skeletonMap, "x", 0);
 				skeletonData.y = GetFloat(skeletonMap, "y", 0);
 				skeletonData.width = GetFloat(skeletonMap, "width", 0);

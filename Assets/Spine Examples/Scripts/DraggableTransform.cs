@@ -30,9 +30,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Input = Spine.Unity.Examples.ExampleInput;
 
 namespace Spine.Unity.Examples {
-	public class DraggableTransform : MonoBehaviour {
+	public class DraggableTransform : MonoBehaviour, UnityEngine.EventSystems.IDragHandler {
+		public void OnDrag (UnityEngine.EventSystems.PointerEventData eventData) {
+		#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+			if (eventData.button != UnityEngine.EventSystems.PointerEventData.InputButton.Left) return;
+			if (mainCamera == null) mainCamera = Camera.main;
+			if (mainCamera == null) return;
+			float depth = -mainCamera.transform.position.z;
+			Vector2 previous = eventData.position - eventData.delta;
+			mouseDeltaWorld = mainCamera.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, depth))
+				- mainCamera.ScreenToWorldPoint(new Vector3(previous.x, previous.y, depth));
+			OnMouseDrag();
+		#endif
+		}
 
 		Vector2 mousePreviousWorld, mouseDeltaWorld;
 		Camera mainCamera;

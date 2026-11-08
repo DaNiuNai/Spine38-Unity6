@@ -30,6 +30,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Input = Spine.Unity.Examples.ExampleInput;
 
 namespace Spine.Unity.Examples {
 	public class DummyMecanimControllerExample : MonoBehaviour {

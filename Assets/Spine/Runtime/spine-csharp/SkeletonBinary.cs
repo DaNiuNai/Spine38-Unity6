@@ -128,8 +128,8 @@ namespace Spine {
 			if (skeletonData.hash.Length == 0) skeletonData.hash = null;
 			skeletonData.version = input.ReadString();
 			if (skeletonData.version.Length == 0) skeletonData.version = null;
-			if ("3.8.75" == skeletonData.version)
-					throw new Exception("Unsupported skeleton data, please export with a newer version of Spine.");
+			// Preserve the original header version; the 3.8 parser still validates
+			// the structure and fails normally for malformed or incompatible data.
 			skeletonData.x = input.ReadFloat();
 			skeletonData.y = input.ReadFloat();
 			skeletonData.width = input.ReadFloat();

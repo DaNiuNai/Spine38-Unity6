@@ -1,0 +1,34 @@
+Spine 3.8 / Unity 6000.3 兼容适配
+
+基线：spine-unity-3.8-2021-11-10.unitypackage。
+验证环境：Unity 6000.3.27f2，URP 17.3.0；同时验证 Built-in。
+保留 Spine 3.8 数据格式和原有运行时接口，未升级到 Spine 4.x。
+
+安装
+1. 导入 spine-unity-3.8-unity6000.3.unitypackage（核心与原有示例）。
+2. 使用 URP 时，在 Package Manager 中安装随附的 com.esotericsoftware.spine.urp-shaders-3.8.2.tgz。
+3. 使用 Timeline 时，安装随附的 com.esotericsoftware.spine.timeline-3.8.4.tgz。
+4. 核心仍依赖 uGUI。Input System 示例适配层仅在 Input System 包存在且启用时编译。
+
+适配内容
+- JSON 与二进制读取器支持原始 3.8.75 版本头，保留原数据结构检查。
+- Unity 6 的 2D 刚体 API、编辑器导入时偏好资源创建流程。
+- 新旧输入系统共存；新输入系统下修复示例键盘、手柄、UI、点击和拖拽。
+- URP 扩展移植官方 4.2 扩展的 Unity 6 Shader 修复，并适配当前 Forward+ 光照宏。
+  该移植只涉及 Shader，不改变 3.8 骨骼/动画运行时。出处与授权见扩展包 UPSTREAM-NOTICE.txt。
+
+使用要点
+- Built-in 与 URP 分别选择对应管线的 Shader；SkeletonGraphic 继续使用其专用 UI Shader。
+- 原版示例中的 PMA 图集适合 Gamma。Linear 项目请导出 Straight Alpha 图集，关闭 Premultiply alpha、开启 Bleed，使用 StraightAlphaPreset，并启用材质 Straight Alpha Texture。
+- 示例输入适配自动作用于原 SDK 示例目录和 URP 扩展示例目录。复制到游戏自己的场景后，请按游戏输入方案配置 EventSystem、InputSystemUIInputModule 和所需 PhysicsRaycaster。
+- 仍需遵守随原 SDK 和扩展代码提供的 Spine Runtimes 授权协议。
+
+验证记录（2026-11-08）
+- 真实 Spine 3.8.75 JSON/二进制：8 段动画、960 帧的骨骼和网格对照通过。
+- 21 个骨骼、102 段动画、59 个皮肤、2550 次网格生成通过，覆盖法线、切线、双色着色通道。
+- 31 个 Built-in 示例、33 个 URP 场景及 URP 2D 示例运行检查通过。
+- Timeline 编辑预览/运行时绑定、89 个资源 Inspector 初始化、Mecanim Clip 和 Prefab 烘焙通过。
+- Windows Built-in、Windows URP、Android IL2CPP、WebGL 构建通过；iOS Xcode 工程导出通过。
+- 用户确认 Windows Built-in、Android、WebGL 中两种格式的角色均正常跑步。
+- iOS 尚未在 Mac/Xcode 和 iOS 设备上编译、签名或运行验证。
+- 原始 PMA 示例在 Linear 构建中仍会产生材质工作流提示；Built-in/Gamma 构建为零警告。

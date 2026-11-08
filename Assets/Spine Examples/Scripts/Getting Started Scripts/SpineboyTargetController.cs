@@ -28,6 +28,7 @@
  *****************************************************************************/
 
 using UnityEngine;
+using Input = Spine.Unity.Examples.ExampleInput;
 
 namespace Spine.Unity.Examples {
 	public class SpineboyTargetController : MonoBehaviour {

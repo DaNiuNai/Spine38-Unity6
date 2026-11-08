@@ -1,0 +1,1 @@
+{"name":"spine-unity-examples-input-system","references":["spine-unity-examples","Unity.InputSystem","Unity.ugui"],"defineConstraints":["ENABLE_INPUT_SYSTEM","SPINE_EXAMPLES_INPUT_SYSTEM"],"versionDefines":[{"name":"com.unity.inputsystem","expression":"1.0.0","define":"SPINE_EXAMPLES_INPUT_SYSTEM"}]}

@@ -37,16 +37,10 @@
 
 using UnityEngine;
 using UnityEditor;
-using System.Threading;
 
 namespace Spine.Unity.Editor {
 
 	public class SpinePreferences : ScriptableObject {
-
-		#if NEW_PREFERENCES_SETTINGS_PROVIDER
-		static int wasPreferencesDirCreated = 0;
-		static int wasPreferencesAssetCreated = 0;
-		#endif
 
 		public const string SPINE_SETTINGS_ASSET_PATH = "Assets/Editor/SpineSettings.asset";
 
@@ -181,15 +175,30 @@ namespace Spine.Unity.Editor {
 			{
 				settings = ScriptableObject.CreateInstance<SpinePreferences>();
 				SpineEditorUtilities.OldPreferences.CopyOldToNewPreferences(ref settings);
-				// Multiple threads may be calling this method during import, creating the folder
-				// multiple times with ascending number suffix. Atomic wasPreferencesDirCreated int
-				// variable is used to prevent any redundant create operations.
-				if (!AssetDatabase.IsValidFolder("Assets/Editor") && Interlocked.Exchange(ref wasPreferencesDirCreated, 1) == 0)
-					AssetDatabase.CreateFolder("Assets", "Editor");
-				if (Interlocked.Exchange(ref wasPreferencesAssetCreated, 1) == 0)
-					AssetDatabase.CreateAsset(settings, SPINE_SETTINGS_ASSET_PATH);
+				// Import/save callbacks can request preferences before initialization. Unity 6
+				// disallows creating assets inside those callbacks, so use the in-memory
+				// defaults immediately and persist them on the next safe editor update.
+				EditorApplication.delayCall -= SaveNewSettings;
+				EditorApplication.delayCall += SaveNewSettings;
 			}
 			return settings;
+		}
+
+		static void SaveNewSettings () {
+			if (settings == null || AssetDatabase.Contains(settings)) return;
+			if (EditorApplication.isUpdating || EditorApplication.isCompiling) {
+				EditorApplication.delayCall += SaveNewSettings;
+				return;
+			}
+			var existing = AssetDatabase.LoadAssetAtPath<SpinePreferences>(SPINE_SETTINGS_ASSET_PATH);
+			if (existing != null) {
+				DestroyImmediate(settings);
+				settings = existing;
+				return;
+			}
+			if (!AssetDatabase.IsValidFolder("Assets/Editor"))
+				AssetDatabase.CreateFolder("Assets", "Editor");
+			AssetDatabase.CreateAsset(settings, SPINE_SETTINGS_ASSET_PATH);
 		}
 
 		static SpinePreferences FindSpinePreferences () {

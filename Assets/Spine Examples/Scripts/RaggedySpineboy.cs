@@ -32,7 +32,14 @@ using System.Collections;
 using Spine.Unity;
 
 namespace Spine.Unity.Examples {
-	public class RaggedySpineboy : MonoBehaviour {
+	public class RaggedySpineboy : MonoBehaviour, UnityEngine.EventSystems.IPointerDownHandler, UnityEngine.EventSystems.IPointerUpHandler {
+		// Capture the press so EventSystem sends the matching release to this object.
+		public void OnPointerDown (UnityEngine.EventSystems.PointerEventData eventData) { }
+		public void OnPointerUp (UnityEngine.EventSystems.PointerEventData eventData) {
+		#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
+			if (eventData.button == UnityEngine.EventSystems.PointerEventData.InputButton.Left) OnMouseUp();
+		#endif
+		}
 
 		public LayerMask groundMask;
 		public float restoreDuration = 0.5f;
@@ -78,7 +85,7 @@ namespace Spine.Unity.Examples {
 			if (hit.collider != null)
 				skeletonPoint = hit.point;
 
-			ragdoll.RootRigidbody.isKinematic = true;
+			ragdoll.RootRigidbody.bodyType = RigidbodyType2D.Kinematic;
 			ragdoll.SetSkeletonPosition(skeletonPoint);
 
 			yield return ragdoll.SmoothMix(0, restoreDuration);

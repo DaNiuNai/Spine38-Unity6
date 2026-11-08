@@ -28,6 +28,7 @@
  *****************************************************************************/
 
 using UnityEngine;
+using Input = Spine.Unity.Examples.ExampleInput;
 using System.Collections;
 
 namespace Spine.Unity.Examples {
